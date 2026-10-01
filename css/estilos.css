@@ -11,6 +11,7 @@
 .footer-inner {
   width: min(1120px, 92%);
   margin: 0 auto;
+  border: black;
 }
 
 .header-inner {
@@ -71,3 +72,28 @@ a:focus {
 .site-footer a{
     color: white;
 }
+
+#contenido{
+	
+	font-family: Arial;
+	margin-left: 300px;
+	padding: 5px;
+	border: 2px solid black;
+	width: 800px;
+  margin-bottom: 10px;
+}
+
+#contenido h1{
+  text-align: center;
+}
+fieldset{
+  background-color: #dcdbdb;
+}
+
+legend
+{
+  background-color: white;
+  font-weight: 700;
+}
+
+

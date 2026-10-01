@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/icono.ico">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header class="site-header">
         <div class="header-inner">
             <nav class="main-nav" aria-label="Navegación principal">
-            <ul>
-                <li><a class="" href="index.html">Inicio</a></li>
-                <li><a class="" href="diario.html">Diario</a></li>
-                <li><a class="" href="estudios.html">Estudios</a></li>
-                <li><a class="active" href="formulario.html">Formulario</a></li>
-            </ul>
+                <ul>
+                    <li><a class="" href="index.html">Inicio</a></li>
+                    <li><a class="" href="diario.html">Diario</a></li>
+                    <li><a class="" href="estudios.html">Estudios</a></li>
+                    <li><a class="active" href="formulario.html">Formulario</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit porta, sem senectus lectus morbi faucibus fames justo non, porttitor magna suscipit aliquet class libero dictum. Ultricies cras nascetur mollis non risus porttitor faucibus dictumst quis, himenaeos posuere cum enim ornare aenean ante tincidunt, sem quisque urna congue interdum leo mauris duis. Elementum magna curabitur ridiculus ligula semper et aptent aliquet, orci tincidunt in luctus imperdiet augue lacinia, tempus aenean torquent dui quam per nam. Netus platea magnis praesent curae placerat in conubia aliquam pellentesque aenean quis, cubilia tristique sapien aliquet a primis mi condimentum quisque rutrum ridiculus, ornare erat inceptos habitant sollicitudin senectus et arcu mollis pharetra. Cubilia nec leo conubia velit non placerat, quis integer tortor at aliquet suscipit, ridiculus mauris mollis euismod nibh.
+    
+    <form action="server.php" method="get">
 
-Mollis suscipit natoque fermentum fusce eu est parturient nascetur tincidunt id, nam massa platea posuere iaculis aptent scelerisque accumsan imperdiet, orci nisl consequat pharetra interdum mauris proin taciti justo. Per accumsan arcu erat aliquam cubilia eros suscipit, dictum ultricies nullam enim nascetur habitasse ridiculus parturient, donec lacinia vitae ut quisque etiam. Malesuada interdum lobortis sollicitudin diam sodales mi nisl pulvinar enim auctor, est aliquet potenti inceptos ad blandit ornare etiam pellentesque, dis sem ligula sociis facilisi porta nascetur scelerisque odio. Egestas aenean et cubilia magna tristique vel risus gravida viverra sem malesuada non diam, nostra sagittis tincidunt duis volutpat augue tempus mi ullamcorper tortor bibendum dictum.
+        <div id="contenido">
+            <h1>Formulario de consulta</h1>
+            <fieldset>
+                <legend>Datos personales:</legend>
+                <label for="id-nombre">Nombre: </label>
+                <input type="text" name="nombre" id="id-nombre">
+                <label for="id-apellido">Apellidos: </label>
+                <input type="text" name="apellido" id="id-apellido">
+                <br>
+                <label for="id-edad">Edad </label>
+                <select id="id-edad" name="edad">
+                    <option selected>Menor de 5</option>
+                    <option>Entre 5 y menor que 9</option>
+                    <option>Entre 9 y menor que 13</option>
+                    <option>Entre 13 y 17</option>
+                    <option>Mayor de 17</option>
+                </select>
+                <br>
+                <label for="id-email">Email: </label>
+                <input type="email" name="email" id="id-email">
+                <br>
+                <label for="id-password">Contraseña: </label>
+                <input type="password" name="password" id="id-password">
+                <br>
+                <p>¿Cual es tu genero?</p>
+                <input type="radio" id="hombre" name="hombre" value="1">
+                <label for="hombre">hombre </label>
+                <input type="radio" id="mujer" name="mujer" value="1">
+                <label for="mujer">mujer </label>
+                <input type="radio" id="otro" name="otro" value="1" checked>
+                <label for="otro">otro </label>
+                <br>
+                <p>Selecciona la fecha de nacimiento y a que la hora sueles repasar:</p>
+                <input type="date" name="fecha" id="id-fecha">
+                <input type="time" name="hora" id="id-hora">
+                <br>
+                <input type="checkbox" name="condiciones" id="id-condiciones" value="1">
+                <label for="id-condiciones">Acepto las condiciones</label>
 
-Condimentum ullamcorper etiam duis taciti auctor, commodo vehicula sodales mus mauris, eros ad sagittis vitae. Ultricies vulputate natoque senectus aenean augue iaculis nulla orci conubia risus, quam elementum porta ullamcorper molestie mattis pharetra duis leo commodo, vestibulum aptent purus ultrices praesent dapibus parturient faucibus per. Mattis inceptos donec himenaeos tellus vivamus tristique volutpat, tortor proin nam cursus vitae nascetur eleifend vestibulum, lacus luctus leo vehicula class quam.</p>
-<br>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit porta, sem senectus lectus morbi faucibus fames justo non, porttitor magna suscipit aliquet class libero dictum. Ultricies cras nascetur mollis non risus porttitor faucibus dictumst quis, himenaeos posuere cum enim ornare aenean ante tincidunt, sem quisque urna congue interdum leo mauris duis. Elementum magna curabitur ridiculus ligula semper et aptent aliquet, orci tincidunt in luctus imperdiet augue lacinia, tempus aenean torquent dui quam per nam. Netus platea magnis praesent curae placerat in conubia aliquam pellentesque aenean quis, cubilia tristique sapien aliquet a primis mi condimentum quisque rutrum ridiculus, ornare erat inceptos habitant sollicitudin senectus et arcu mollis pharetra. Cubilia nec leo conubia velit non placerat, quis integer tortor at aliquet suscipit, ridiculus mauris mollis euismod nibh.
+            </fieldset>
+            <fieldset>
+                <legend>Capacidad de atencion</legend>
 
-Mollis suscipit natoque fermentum fusce eu est parturient nascetur tincidunt id, nam massa platea posuere iaculis aptent scelerisque accumsan imperdiet, orci nisl consequat pharetra interdum mauris proin taciti justo. Per accumsan arcu erat aliquam cubilia eros suscipit, dictum ultricies nullam enim nascetur habitasse ridiculus parturient, donec lacinia vitae ut quisque etiam. Malesuada interdum lobortis sollicitudin diam sodales mi nisl pulvinar enim auctor, est aliquet potenti inceptos ad blandit ornare etiam pellentesque, dis sem ligula sociis facilisi porta nascetur scelerisque odio. Egestas aenean et cubilia magna tristique vel risus gravida viverra sem malesuada non diam, nostra sagittis tincidunt duis volutpat augue tempus mi ullamcorper tortor bibendum dictum.
+                <p>¿Cuanto suele costarte presta atención?</p>
+                <input type="radio" id="atender_l1" name="atender_l1" value="1" checked>
+                <label for="atender_l1">me cuesta mucho prestar atención normalmente </label>
+                <br>
+                <input type="radio" id="atender_l2" name="atender_l2" value="0">
+                <label for="atender_l2">me cuesta prestar atención normalmente </label>
+                <br>
+                <input type="radio" id="atender_l3" name="atender_l3" value="0">
+                <label for="atender_l3">me cuesta prestar atención normalmente </label>
+                <br>
+                <input type="radio" id="atender_l4" name="atender_l4" value="0">
+                <label for="atender_l4">me cuesta prestar atención normalmente </label>
+                <br>
 
-Condimentum ullamcorper etiam duis taciti auctor, commodo vehicula sodales mus mauris, eros ad sagittis vitae. Ultricies vulputate natoque senectus aenean augue iaculis nulla orci conubia risus, quam elementum porta ullamcorper molestie mattis pharetra duis leo commodo, vestibulum aptent purus ultrices praesent dapibus parturient faucibus per. Mattis inceptos donec himenaeos tellus vivamus tristique volutpat, tortor proin nam cursus vitae nascetur eleifend vestibulum, lacus luctus leo vehicula class quam.</p>
-<br>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit porta, sem senectus lectus morbi faucibus fames justo non, porttitor magna suscipit aliquet class libero dictum. Ultricies cras nascetur mollis non risus porttitor faucibus dictumst quis, himenaeos posuere cum enim ornare aenean ante tincidunt, sem quisque urna congue interdum leo mauris duis. Elementum magna curabitur ridiculus ligula semper et aptent aliquet, orci tincidunt in luctus imperdiet augue lacinia, tempus aenean torquent dui quam per nam. Netus platea magnis praesent curae placerat in conubia aliquam pellentesque aenean quis, cubilia tristique sapien aliquet a primis mi condimentum quisque rutrum ridiculus, ornare erat inceptos habitant sollicitudin senectus et arcu mollis pharetra. Cubilia nec leo conubia velit non placerat, quis integer tortor at aliquet suscipit, ridiculus mauris mollis euismod nibh.
+                <p>¿Cuanto energía sueles tener?</p>
+                <input type="radio" id="Energia_1" name="Energia_1" value="1" checked>
+                <label for="Energia_1">Suelo estar muy cansado/a </label>
+                <br>
+                <input type="radio" id="Energia_2" name="Energia_2" value="0">
+                <label for="Energia_2">Suelo estar cansado/a </label>
+                <br>
+                <input type="radio" id="Energia_3" name="Energia_3" value="0">
+                <label for="atender_l3">No suelo estar cansado/a </label>
+                <br>
+                <input type="radio" id="Energia_4" name="Energia_4" value="0">
+                <label for="Energia_4">Tengo mucha energía </label>
+                <br>
 
-Mollis suscipit natoque fermentum fusce eu est parturient nascetur tincidunt id, nam massa platea posuere iaculis aptent scelerisque accumsan imperdiet, orci nisl consequat pharetra interdum mauris proin taciti justo. Per accumsan arcu erat aliquam cubilia eros suscipit, dictum ultricies nullam enim nascetur habitasse ridiculus parturient, donec lacinia vitae ut quisque etiam. Malesuada interdum lobortis sollicitudin diam sodales mi nisl pulvinar enim auctor, est aliquet potenti inceptos ad blandit ornare etiam pellentesque, dis sem ligula sociis facilisi porta nascetur scelerisque odio. Egestas aenean et cubilia magna tristique vel risus gravida viverra sem malesuada non diam, nostra sagittis tincidunt duis volutpat augue tempus mi ullamcorper tortor bibendum dictum.
+                <br>
+                <p>Algun comentario que quieras añadir:</p>
+                <textarea name="comentarios" rows="6" cols="30" placeholder="Comentarios"></textarea>
+                <br>
 
-Condimentum ullamcorper etiam duis taciti auctor, commodo vehicula sodales mus mauris, eros ad sagittis vitae. Ultricies vulputate natoque senectus aenean augue iaculis nulla orci conubia risus, quam elementum porta ullamcorper molestie mattis pharetra duis leo commodo, vestibulum aptent purus ultrices praesent dapibus parturient faucibus per. Mattis inceptos donec himenaeos tellus vivamus tristique volutpat, tortor proin nam cursus vitae nascetur eleifend vestibulum, lacus luctus leo vehicula class quam.</p>
-<br>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit porta, sem senectus lectus morbi faucibus fames justo non, porttitor magna suscipit aliquet class libero dictum. Ultricies cras nascetur mollis non risus porttitor faucibus dictumst quis, himenaeos posuere cum enim ornare aenean ante tincidunt, sem quisque urna congue interdum leo mauris duis. Elementum magna curabitur ridiculus ligula semper et aptent aliquet, orci tincidunt in luctus imperdiet augue lacinia, tempus aenean torquent dui quam per nam. Netus platea magnis praesent curae placerat in conubia aliquam pellentesque aenean quis, cubilia tristique sapien aliquet a primis mi condimentum quisque rutrum ridiculus, ornare erat inceptos habitant sollicitudin senectus et arcu mollis pharetra. Cubilia nec leo conubia velit non placerat, quis integer tortor at aliquet suscipit, ridiculus mauris mollis euismod nibh.
+            </fieldset>
 
-Mollis suscipit natoque fermentum fusce eu est parturient nascetur tincidunt id, nam massa platea posuere iaculis aptent scelerisque accumsan imperdiet, orci nisl consequat pharetra interdum mauris proin taciti justo. Per accumsan arcu erat aliquam cubilia eros suscipit, dictum ultricies nullam enim nascetur habitasse ridiculus parturient, donec lacinia vitae ut quisque etiam. Malesuada interdum lobortis sollicitudin diam sodales mi nisl pulvinar enim auctor, est aliquet potenti inceptos ad blandit ornare etiam pellentesque, dis sem ligula sociis facilisi porta nascetur scelerisque odio. Egestas aenean et cubilia magna tristique vel risus gravida viverra sem malesuada non diam, nostra sagittis tincidunt duis volutpat augue tempus mi ullamcorper tortor bibendum dictum.
 
-Condimentum ullamcorper etiam duis taciti auctor, commodo vehicula sodales mus mauris, eros ad sagittis vitae. Ultricies vulputate natoque senectus aenean augue iaculis nulla orci conubia risus, quam elementum porta ullamcorper molestie mattis pharetra duis leo commodo, vestibulum aptent purus ultrices praesent dapibus parturient faucibus per. Mattis inceptos donec himenaeos tellus vivamus tristique volutpat, tortor proin nam cursus vitae nascetur eleifend vestibulum, lacus luctus leo vehicula class quam.</p>
-<br>
 
+            <input type="submit" name="enviar" value="ENVIAR">
+        </div>
+    </form>
     <footer class="site-footer">
-    <div class="footer-inner">
-        <section>
-        <h2>Analisis</h2>
-        <p>Experiencia personal de alguien con TDAH.</p>
-        </section>
-        <section>
-        <h2>Indice</h2>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="diario.html">Diario</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="formulario.html">formulario</a></li>
-        </ul>
-        </section>
-        <section>
-        <h2>Información</h2>
-        <p><small>&copy; 2026 Entregable E1. Prototipo de pagina web simple.</small></p>
-        </section>
-    </div>
+        <div class="footer-inner">
+            <section>
+                <h2>Analisis</h2>
+                <p>Experiencia personal de alguien con TDAH.</p>
+            </section>
+            <section>
+                <h2>Indice</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="diario.html">Diario</a></li>
+                    <li><a href="estudios.html">Estudios</a></li>
+                    <li><a href="formulario.html">formulario</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Información</h2>
+                <p><small>&copy; 2026 Entregable E1. Prototipo de pagina web simple.</small></p>
+            </section>
+        </div>
     </footer>
 </body>
+
 </html>
