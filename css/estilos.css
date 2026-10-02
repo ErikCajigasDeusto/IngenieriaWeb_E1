@@ -61,10 +61,10 @@ a:focus {
 .footer-inner {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 2.8%;
+  gap: 0.28%;
 }
 
-.site-footer a {
+footer a {
   color: white;
 }
 
@@ -99,7 +99,7 @@ legend {
 footer {
   background: blue;
   color: #ffffff;
-  padding: 0.34%0;
+  padding: 0.34%;
 }
 
 section a {
@@ -119,4 +119,11 @@ td {
 
 thead {
   background: #eef2ff;
+}
+
+#imagenes img {
+  border: 0;
+  width: 88px;
+  height: 31px"
+
 }
