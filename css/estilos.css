@@ -1,4 +1,4 @@
-header{
+header {
   background: blue;
   color: #ffffff;
   position: sticky;
@@ -49,9 +49,10 @@ a:focus {
 }
 
 .main-nav a:hover,
-.main-nav a:focus{
+.main-nav a:focus {
   background: rgb(6, 235, 6);
 }
+
 .main-nav a.active {
   background: rgb(111, 189, 228);
 }
@@ -63,44 +64,59 @@ a:focus {
   gap: 2.8%;
 }
 
-.site-footer a{
-    color: white;
+.site-footer a {
+  color: white;
 }
 
-#contenido{
-	
-	font-family: Arial;
-	margin-left: 10%;
-	padding: 5px;
-	border: 2px solid black;
-	width: 80%;
+#contenido {
+
+  font-family: Arial;
+  margin-left: 10%;
+  padding: 5px;
+  border: 2px solid black;
+  width: 80%;
   margin-bottom: 10px;
 }
 
-#contenido h1{
+#contenido h1 {
   text-align: center;
 }
-fieldset{
+
+fieldset {
   background-color: #dcdbdb;
 }
 
-legend
-{
+legend {
   background-color: white;
   font-weight: 700;
 }
 
-#Submenu li{
+#Submenu li {
   background-color: rgb(250, 7, 193);
   border-radius: 8px;
 }
 
-footer{
+footer {
   background: blue;
   color: #ffffff;
   padding: 0.34%0;
 }
 
-section a{
+section a {
   color: white;
+}
+
+img {
+  position: relative;
+}
+
+td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead {
+  background: #eef2ff;
 }
