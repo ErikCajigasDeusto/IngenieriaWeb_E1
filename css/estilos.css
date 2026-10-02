@@ -1,4 +1,4 @@
-.site-header {
+header{
   background: blue;
   color: #ffffff;
   position: sticky;
@@ -9,17 +9,17 @@
 .header-inner,
 .main-container,
 .footer-inner {
-  width: min(1120px, 92%);
+  width: min(40%, 92%);
   margin: 0 auto;
   border: black;
 }
 
 .header-inner {
-  min-height: 72px;
+  min-height: 7.2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 2.4%;
 }
 
 .main-nav ul {
@@ -56,17 +56,11 @@ a:focus {
   background: rgb(111, 189, 228);
 }
 
-.site-footer {
-  background: blue;
-  color: #ffffff;
-  padding: 34px 0;
-
-}
 
 .footer-inner {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 28px;
+  gap: 2.8%;
 }
 
 .site-footer a{
@@ -76,10 +70,10 @@ a:focus {
 #contenido{
 	
 	font-family: Arial;
-	margin-left: 300px;
+	margin-left: 10%;
 	padding: 5px;
 	border: 2px solid black;
-	width: 800px;
+	width: 80%;
   margin-bottom: 10px;
 }
 
@@ -96,4 +90,17 @@ legend
   font-weight: 700;
 }
 
+#Submenu li{
+  background-color: rgb(250, 7, 193);
+  border-radius: 8px;
+}
 
+footer{
+  background: blue;
+  color: #ffffff;
+  padding: 0.34%0;
+}
+
+section a{
+  color: white;
+}

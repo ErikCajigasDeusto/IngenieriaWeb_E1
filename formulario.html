@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header>
         <div class="header-inner">
             <nav class="main-nav" aria-label="Navegación principal">
                 <ul>
@@ -51,12 +51,13 @@
                 <input type="password" name="password" id="id-password">
                 <br>
                 <p>¿Cual es tu genero?</p>
-                <input type="radio" id="hombre" name="hombre" value="1">
+                <input type="radio" id="hombre" name="persona" value="1"checked>
                 <label for="hombre">hombre </label>
-                <input type="radio" id="mujer" name="mujer" value="1">
+                <input type="radio" id="mujer" name="persona" value="0">
                 <label for="mujer">mujer </label>
-                <input type="radio" id="otro" name="otro" value="1" checked>
+                <input type="radio" id="otro" name="persona" value="0" >
                 <label for="otro">otro </label>
+                
                 <br>
                 <p>Selecciona la fecha de nacimiento y a que la hora sueles repasar:</p>
                 <input type="date" name="fecha" id="id-fecha">
@@ -70,30 +71,30 @@
                 <legend>Capacidad de atencion</legend>
 
                 <p>¿Cuanto suele costarte presta atención?</p>
-                <input type="radio" id="atender_l1" name="atender_l1" value="1" checked>
+                <input type="radio" id="atender_l1" name="atencion" value="1" checked>
                 <label for="atender_l1">me cuesta mucho prestar atención normalmente </label>
                 <br>
-                <input type="radio" id="atender_l2" name="atender_l2" value="0">
+                <input type="radio" id="atender_l2" name="atencion" value="0">
                 <label for="atender_l2">me cuesta prestar atención normalmente </label>
                 <br>
-                <input type="radio" id="atender_l3" name="atender_l3" value="0">
+                <input type="radio" id="atender_l3" name="atencion" value="0">
                 <label for="atender_l3">me cuesta prestar atención normalmente </label>
                 <br>
-                <input type="radio" id="atender_l4" name="atender_l4" value="0">
+                <input type="radio" id="atender_l4" name="atencion" value="0">
                 <label for="atender_l4">me cuesta prestar atención normalmente </label>
                 <br>
 
                 <p>¿Cuanto energía sueles tener?</p>
-                <input type="radio" id="Energia_1" name="Energia_1" value="1" checked>
+                <input type="radio" id="Energia_1" name="Energia" value="1" checked>
                 <label for="Energia_1">Suelo estar muy cansado/a </label>
                 <br>
-                <input type="radio" id="Energia_2" name="Energia_2" value="0">
+                <input type="radio" id="Energia_2" name="Energia" value="0">
                 <label for="Energia_2">Suelo estar cansado/a </label>
                 <br>
-                <input type="radio" id="Energia_3" name="Energia_3" value="0">
+                <input type="radio" id="Energia_3" name="Energia" value="0">
                 <label for="atender_l3">No suelo estar cansado/a </label>
                 <br>
-                <input type="radio" id="Energia_4" name="Energia_4" value="0">
+                <input type="radio" id="Energia_4" name="Energia" value="0">
                 <label for="Energia_4">Tengo mucha energía </label>
                 <br>
 
@@ -109,7 +110,7 @@
             <input type="submit" name="enviar" value="ENVIAR">
         </div>
     </form>
-    <footer class="site-footer">
+    <footer>
         <div class="footer-inner">
             <section>
                 <h2>Analisis</h2>
