@@ -12,12 +12,16 @@
 <body>
     <header>
         <div class="header-inner">
-            <nav class="main-nav" aria-label="Navegación principal">
+            <nav class="main-nav">
                 <ul>
                     <li><a class="" href="index.html">Inicio</a></li>
                     <li><a class="" href="diario.html">Diario</a></li>
                     <li><a class="" href="estudios.html">Estudios</a></li>
                     <li><a class="active" href="formulario.html">Formulario</a></li>
+                </ul>
+                <ul id="Submenu">
+                    <li><a href="#datosPersonales">Datos personales</a></li>
+                    <li><a href="#atencion">Capacidad de atención</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,9 +31,11 @@
     <form action="server.php" method="get">
 
         <div id="contenido">
-            <h1>Formulario de consulta</h1>
+            <br>
+            <h1 id="datosPersonales">Formulario de consulta</h1>
+            <br>
             <fieldset>
-                <legend>Datos personales:</legend>
+                <legend >Datos personales:</legend>
                 <label for="id-nombre">Nombre: </label>
                 <input type="text" name="nombre" id="id-nombre">
                 <label for="id-apellido">Apellidos: </label>
@@ -68,7 +74,7 @@
 
             </fieldset>
             <fieldset>
-                <legend>Capacidad de atencion</legend>
+                <legend id="atencion">Capacidad de atencion</legend>
 
                 <p>¿Cuanto suele costarte presta atención?</p>
                 <input type="radio" id="atender_l1" name="atencion" value="1" checked>
@@ -125,11 +131,11 @@
         </div>
         <div class="footer-inner">
             <section>
-                <h1>Analisis</h1>
+                <h2>Analisis</h2>
                 <p>Experiencia personal de alguien con TDAH.</p>
             </section>
             <section>
-                <h1>Indice</h1>
+                <h2>Indice</h2>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="diario.html">Diario</a></li>
@@ -138,7 +144,7 @@
                 </ul>
             </section>
             <section>
-                <h1>Información</h1>
+                <h2>Información</h2>
                 <p><small>&copy; 2026 Entregable E1. Prototipo de pagina web simple.</small></p>
             </section>
 

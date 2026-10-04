@@ -121,9 +121,8 @@ thead {
   background: #eef2ff;
 }
 
-#imagenes img {
-  border: 0;
-  width: 88px;
-  height: 31px"
-
+.cabecerasSecundarias
+{
+  background-color: aqua;
 }
+
